@@ -1,0 +1,9 @@
+{
+  "block.solareum.hand_crank_press": "Hand Crank Press",
+  "item.solareum.bio_fiber": "Bio-Fiber",
+  "item.solareum.bio_fiber_sheet": "Bio-Fiber Sheet",
+  "item.solareum.copper_coil": "Copper Coil",
+  "item.solareum.photovoltaic_cell": "Photovoltaic Cell",
+  "item.solareum.wrench": "Wrench",
+  "itemGroup.solareum": "Solareum"
+}
