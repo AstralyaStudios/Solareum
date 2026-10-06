@@ -52,14 +52,6 @@ loom {
     }
 }
 
-sourceSets {
-    main {
-        resources {
-            srcDir "src/generated/resources"
-        }
-    }
-}
-
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
     modImplementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"

@@ -13,10 +13,10 @@ public final class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.SOLAREUM_EMBLEM.get());
         basicItem(ModItems.BIO_FIBER.get());
-        basicItem(ModItems.SOLAR_JOURNAL.get());
-        basicItem(ModItems.LUX_METER.get());
+        basicItem(ModItems.BIO_FIBER_SHEET.get());
+        basicItem(ModItems.PHOTOVOLTAIC_CELL.get());
+        basicItem(ModItems.COPPER_COIL.get());
         basicItem(ModItems.WRENCH.get());
     }
 }

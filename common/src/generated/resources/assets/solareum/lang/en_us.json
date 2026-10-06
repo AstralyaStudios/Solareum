@@ -1,13 +1,9 @@
 {
-  "block.solareum.hand_crank_press": "Hand-Crank Press",
-  "block.solareum.leaf_panel": "Leaf Panel",
-  "block.solareum.moss_capacitor": "Moss Capacitor",
-  "block.solareum.seed_press": "Seed Press",
-  "block.solareum.vine_conduit": "Vine Conduit",
+  "block.solareum.hand_crank_press": "Hand Crank Press",
   "item.solareum.bio_fiber": "Bio-Fiber",
-  "item.solareum.lux_meter": "Lux Meter",
-  "item.solareum.solar_journal": "Solar Journal",
-  "item.solareum.solareum_emblem": "Solareum Emblem",
+  "item.solareum.bio_fiber_sheet": "Bio-Fiber Sheet",
+  "item.solareum.copper_coil": "Copper Coil",
+  "item.solareum.photovoltaic_cell": "Photovoltaic Cell",
   "item.solareum.wrench": "Wrench",
   "itemGroup.solareum": "Solareum"
 }
