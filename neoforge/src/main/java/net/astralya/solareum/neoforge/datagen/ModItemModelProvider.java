@@ -15,6 +15,7 @@ public final class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.BIO_FIBER.get());
         basicItem(ModItems.BIO_FIBER_SHEET.get());
+        basicItem(ModItems.COPPER_PLATE.get());
         basicItem(ModItems.PHOTOVOLTAIC_CELL.get());
         basicItem(ModItems.COPPER_COIL.get());
         basicItem(ModItems.WRENCH.get());

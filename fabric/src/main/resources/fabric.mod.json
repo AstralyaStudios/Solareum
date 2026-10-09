@@ -12,6 +12,9 @@
   "entrypoints": {
     "main": [
       "net.astralya.solareum.fabric.SolareumFabric"
+    ],
+    "client": [
+      "net.astralya.solareum.fabric.SolareumFabricClient"
     ]
   },
   "depends": {

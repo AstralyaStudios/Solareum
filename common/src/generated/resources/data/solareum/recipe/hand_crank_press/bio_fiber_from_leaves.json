@@ -1,0 +1,11 @@
+{
+  "type": "solareum:hand_crank_press",
+  "ingredient": {
+    "tag": "minecraft:leaves"
+  },
+  "input_count": 4,
+  "output": {
+    "count": 1,
+    "id": "solareum:bio_fiber"
+  }
+}

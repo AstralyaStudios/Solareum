@@ -15,6 +15,7 @@ public final class ModLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         add(ModItems.BIO_FIBER.get(), "Bio-Fiber");
         add(ModItems.BIO_FIBER_SHEET.get(), "Bio-Fiber Sheet");
+        add(ModItems.COPPER_PLATE.get(), "Copper Plate");
         add(ModItems.PHOTOVOLTAIC_CELL.get(), "Photovoltaic Cell");
         add(ModItems.COPPER_COIL.get(), "Copper Coil");
         add(ModItems.WRENCH.get(), "Wrench");

@@ -21,6 +21,7 @@ public final class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.BIO_FIBER.get());
                         output.accept(ModItems.BIO_FIBER_SHEET.get());
+                        output.accept(ModItems.COPPER_PLATE.get());
                         output.accept(ModItems.PHOTOVOLTAIC_CELL.get());
                         output.accept(ModItems.COPPER_COIL.get());
                         output.accept(ModItems.WRENCH.get());

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_copper_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "solareum:copper_plate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "solareum:copper_coil"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_copper_plate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "solareum:copper_coil"
+    ]
+  }
+}

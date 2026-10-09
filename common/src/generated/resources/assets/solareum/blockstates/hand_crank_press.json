@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
-      "model": "solareum:block/hand_crank_press"
+    "facing=north": {
+      "model": "solareum:block/hand_crank_press/base"
+    },
+    "facing=east": {
+      "model": "solareum:block/hand_crank_press/base",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "solareum:block/hand_crank_press/base",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "solareum:block/hand_crank_press/base",
+      "y": 270
     }
   }
 }

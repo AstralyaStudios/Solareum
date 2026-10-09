@@ -1,0 +1,11 @@
+{
+  "type": "solareum:hand_crank_press",
+  "ingredient": {
+    "item": "solareum:bio_fiber"
+  },
+  "input_count": 2,
+  "output": {
+    "count": 1,
+    "id": "solareum:bio_fiber_sheet"
+  }
+}

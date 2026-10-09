@@ -13,8 +13,9 @@ public final class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        var model = models().getExistingFile(modLoc("block/hand_crank_press"));
-        simpleBlock(ModBlocks.HAND_CRANK_PRESS.get(), model);
-        simpleBlockItem(ModBlocks.HAND_CRANK_PRESS.get(), model);
+        var baseModel = models().getExistingFile(modLoc("block/hand_crank_press/base"));
+        var itemModel = models().getExistingFile(modLoc("block/hand_crank_press/item"));
+        horizontalBlock(ModBlocks.HAND_CRANK_PRESS.get(), baseModel);
+        simpleBlockItem(ModBlocks.HAND_CRANK_PRESS.get(), itemModel);
     }
 }

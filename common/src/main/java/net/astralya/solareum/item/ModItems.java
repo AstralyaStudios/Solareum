@@ -15,6 +15,8 @@ public final class ModItems {
             ITEMS.register("bio_fiber", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BIO_FIBER_SHEET =
             ITEMS.register("bio_fiber_sheet", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> COPPER_PLATE =
+            ITEMS.register("copper_plate", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> PHOTOVOLTAIC_CELL =
             ITEMS.register("photovoltaic_cell", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> COPPER_COIL =
