@@ -2,6 +2,7 @@ plugins {
     id 'dev.architectury.loom' version '1.11-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.gradleup.shadow' version '8.3.6' apply false
+    id 'com.diffplug.spotless' version '7.0.2' apply false
 }
 
 architectury {
@@ -17,6 +18,24 @@ subprojects {
     apply plugin: 'dev.architectury.loom'
     apply plugin: 'architectury-plugin'
     apply plugin: 'maven-publish'
+
+    if (project.name in ['common', 'fabric', 'neoforge']) {
+        apply plugin: 'com.diffplug.spotless'
+
+        spotless {
+            java {
+                target 'src/main/java/**/*.java'
+                removeUnusedImports()
+                googleJavaFormat()
+                formatAnnotations()
+            }
+        }
+    }
+
+    base {
+        archivesName = "$rootProject.archives_name-$project.name"
+    }
+
 
     base {
         archivesName = "$rootProject.archives_name-$project.name"

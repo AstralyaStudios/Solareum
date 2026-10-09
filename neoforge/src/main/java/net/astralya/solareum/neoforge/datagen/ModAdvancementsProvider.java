@@ -6,7 +6,6 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.advancements.AdvancementSubProvider;
 
 public final class ModAdvancementsProvider implements AdvancementSubProvider {
-    @Override
-    public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> writer) {
-    }
+  @Override
+  public void generate(HolderLookup.Provider registries, Consumer<AdvancementHolder> writer) {}
 }

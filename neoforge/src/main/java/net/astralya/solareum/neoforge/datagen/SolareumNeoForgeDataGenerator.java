@@ -14,25 +14,27 @@ import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 @EventBusSubscriber(modid = Solareum.MOD_ID)
 public final class SolareumNeoForgeDataGenerator {
-    private SolareumNeoForgeDataGenerator() {
-    }
+  private SolareumNeoForgeDataGenerator() {}
 
-    @SubscribeEvent
-    public static void gatherData(GatherDataEvent event) {
-        DataGenerator generator = event.getGenerator();
-        PackOutput output = generator.getPackOutput();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider> registries = event.getLookupProvider();
-        ModBlockTagProvider blockTags = new ModBlockTagProvider(output, registries, existingFileHelper);
+  @SubscribeEvent
+  public static void gatherData(GatherDataEvent event) {
+    DataGenerator generator = event.getGenerator();
+    PackOutput output = generator.getPackOutput();
+    ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+    CompletableFuture<HolderLookup.Provider> registries = event.getLookupProvider();
+    ModBlockTagProvider blockTags = new ModBlockTagProvider(output, registries, existingFileHelper);
 
-        generator.addProvider(true, new ModItemModelProvider(output, existingFileHelper));
-        generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
-        generator.addProvider(true, blockTags);
-        generator.addProvider(true, new ModItemTagProvider(output, registries, blockTags.contentsGetter(), existingFileHelper));
-        generator.addProvider(true, new ModRecipeProvider(output, registries));
-        generator.addProvider(true, new AdvancementProvider(output, registries, List.of(new ModAdvancementsProvider())));
-        generator.addProvider(true, new ModBlockLootTableProvider(output, registries));
-        generator.addProvider(true, new ModLanguageProvider(output));
-        generator.addProvider(true, new DatagenExitProvider());
-    }
+    generator.addProvider(true, new ModItemModelProvider(output, existingFileHelper));
+    generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
+    generator.addProvider(true, blockTags);
+    generator.addProvider(
+        true,
+        new ModItemTagProvider(output, registries, blockTags.contentsGetter(), existingFileHelper));
+    generator.addProvider(true, new ModRecipeProvider(output, registries));
+    generator.addProvider(
+        true, new AdvancementProvider(output, registries, List.of(new ModAdvancementsProvider())));
+    generator.addProvider(true, new ModBlockLootTableProvider(output, registries));
+    generator.addProvider(true, new ModLanguageProvider(output));
+    generator.addProvider(true, new DatagenExitProvider());
+  }
 }
