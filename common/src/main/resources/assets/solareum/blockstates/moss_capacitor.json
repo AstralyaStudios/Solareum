@@ -1,0 +1,14 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "solareum:block/moss_capacitor"
+      }
+    },
+    {
+      "apply": {
+        "model": "solareum:block/moss_capacitor_emissive"
+      }
+    }
+  ]
+}

@@ -1,10 +1,23 @@
 {
   "block.solareum.hand_crank_press": "Hand Crank Press",
+  "block.solareum.sunflower_collector": "Sunflower Collector",
+  "block.solareum.radiant_oven": "Radiant Oven",
+  "block.solareum.vine_conduit": "Vine Conduit",
   "item.solareum.bio_fiber": "Bio-Fiber",
   "item.solareum.bio_fiber_sheet": "Bio-Fiber Sheet",
   "item.solareum.copper_coil": "Copper Coil",
   "item.solareum.copper_plate": "Copper Plate",
   "item.solareum.photovoltaic_cell": "Photovoltaic Cell",
   "item.solareum.wrench": "Wrench",
-  "itemGroup.solareum": "Solareum"
+  "itemGroup.solareum": "Solareum",
+  "message.solareum.vine_conduit.side": "Vine Conduit %s: %s",
+  "message.solareum.auto": "Auto",
+  "message.solareum.disabled": "Disabled",
+  "direction.solareum.down": "Down",
+  "direction.solareum.up": "Up",
+  "direction.solareum.north": "North",
+  "direction.solareum.south": "South",
+  "direction.solareum.west": "West",
+  "direction.solareum.east": "East",
+  "block.solareum.moss_capacitor": "Moss Capacitor"
 }

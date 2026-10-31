@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "solareum:copper_plate"
+    },
+    "S": {
+      "item": "solareum:bio_fiber_sheet"
+    },
+    "C": {
+      "item": "solareum:copper_coil"
+    },
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "CFC",
+    "PGS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "solareum:radiant_oven"
+  }
+}

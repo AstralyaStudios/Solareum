@@ -30,6 +30,24 @@ public final class ModItems {
           "hand_crank_press",
           () -> new BlockItem(ModBlocks.HAND_CRANK_PRESS.get(), new Item.Properties()));
 
+  public static final RegistrySupplier<Item> SUNFLOWER_COLLECTOR =
+      ITEMS.register(
+          "sunflower_collector",
+          () -> new BlockItem(ModBlocks.SUNFLOWER_COLLECTOR.get(), new Item.Properties()));
+
+  public static final RegistrySupplier<Item> RADIANT_OVEN =
+      ITEMS.register(
+          "radiant_oven", () -> new BlockItem(ModBlocks.RADIANT_OVEN.get(), new Item.Properties()));
+
+  public static final RegistrySupplier<Item> VINE_CONDUIT =
+      ITEMS.register(
+          "vine_conduit", () -> new BlockItem(ModBlocks.VINE_CONDUIT.get(), new Item.Properties()));
+
+  public static final RegistrySupplier<Item> MOSS_CAPACITOR =
+      ITEMS.register(
+          "moss_capacitor",
+          () -> new BlockItem(ModBlocks.MOSS_CAPACITOR.get(), new Item.Properties()));
+
   private ModItems() {}
 
   public static void init() {

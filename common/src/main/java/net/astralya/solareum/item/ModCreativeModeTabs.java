@@ -32,6 +32,10 @@ public final class ModCreativeModeTabs {
                                 output.accept(ModItems.COPPER_COIL.get());
                                 output.accept(ModItems.WRENCH.get());
                                 output.accept(ModBlocks.HAND_CRANK_PRESS.get());
+                                output.accept(ModBlocks.SUNFLOWER_COLLECTOR.get());
+                                output.accept(ModBlocks.RADIANT_OVEN.get());
+                                output.accept(ModBlocks.VINE_CONDUIT.get());
+                                output.accept(ModBlocks.MOSS_CAPACITOR.get());
                               })));
 
   private ModCreativeModeTabs() {}

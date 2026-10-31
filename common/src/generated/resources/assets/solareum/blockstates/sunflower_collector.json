@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "solareum:block/sunflower_collector"
+    }
+  }
+}

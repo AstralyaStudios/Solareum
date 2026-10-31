@@ -2,7 +2,9 @@ package net.astralya.solareum.fabric;
 
 import net.astralya.solareum.block.ModBlocks;
 import net.astralya.solareum.block.entity.ModBlockEntityTypes;
+import net.astralya.solareum.client.SolareumClient;
 import net.astralya.solareum.client.renderer.HandCrankPressRenderer;
+import net.astralya.solareum.fabric.client.MossCapacitorEmissiveModel;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.model.loading.v1.FabricBakedModelManager;
@@ -14,6 +16,8 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 public final class SolareumFabricClient implements ClientModInitializer {
   @Override
   public void onInitializeClient() {
+    SolareumClient.registerScreens();
+    MossCapacitorEmissiveModel.register();
     ModelLoadingPlugin.register(
         context ->
             context.addModels(

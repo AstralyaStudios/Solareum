@@ -27,6 +27,14 @@ public final class ModRecipeProvider extends RecipeProvider {
 
   @Override
   protected void buildRecipes(RecipeOutput recipeOutput) {
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VINE_CONDUIT.get(), 8)
+        .pattern("CVC")
+        .pattern("V B")
+        .define('C', Items.COPPER_INGOT)
+        .define('V', Items.VINE)
+        .define('B', ModItems.BIO_FIBER.get())
+        .unlockedBy("has_bio_fiber", has(ModItems.BIO_FIBER.get()))
+        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Solareum.MOD_ID, "vine_conduit"));
     press(
         recipeOutput,
         "bio_fiber_from_leaves",
@@ -74,6 +82,19 @@ public final class ModRecipeProvider extends RecipeProvider {
             "has_copper_plate",
             InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COPPER_PLATE.get()))
         .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Solareum.MOD_ID, "copper_coil"));
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RADIANT_OVEN.get())
+        .pattern("PSP")
+        .pattern("CFC")
+        .pattern("PGS")
+        .define('P', ModItems.COPPER_PLATE.get())
+        .define('S', ModItems.BIO_FIBER_SHEET.get())
+        .define('C', ModItems.COPPER_COIL.get())
+        .define('F', Items.FURNACE)
+        .define('G', Items.GLASS)
+        .unlockedBy(
+            "has_copper_plate",
+            InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COPPER_PLATE.get()))
+        .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Solareum.MOD_ID, "radiant_oven"));
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.HAND_CRANK_PRESS.get())
         .pattern("PCP")
         .pattern("PBP")

@@ -1,0 +1,138 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "active": "false"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_core"
+      }
+    },
+    {
+      "when": {
+        "active": "false",
+        "down": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "active": "false",
+        "up": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part",
+        "x": 270
+      }
+    },
+    {
+      "when": {
+        "active": "false",
+        "north": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part"
+      }
+    },
+    {
+      "when": {
+        "active": "false",
+        "south": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "active": "false",
+        "west": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "active": "false",
+        "east": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "active": "true"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_core_on"
+      }
+    },
+    {
+      "when": {
+        "active": "true",
+        "down": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part_on",
+        "x": 90
+      }
+    },
+    {
+      "when": {
+        "active": "true",
+        "up": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part_on",
+        "x": 270
+      }
+    },
+    {
+      "when": {
+        "active": "true",
+        "north": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part_on"
+      }
+    },
+    {
+      "when": {
+        "active": "true",
+        "south": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part_on",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "active": "true",
+        "west": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part_on",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "active": "true",
+        "east": "conduit|endpoint"
+      },
+      "apply": {
+        "model": "solareum:block/vine_conduit/vine_conduit_part_on",
+        "y": 90
+      }
+    }
+  ]
+}

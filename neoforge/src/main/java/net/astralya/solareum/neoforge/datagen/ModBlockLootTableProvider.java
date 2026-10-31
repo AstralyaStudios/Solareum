@@ -30,11 +30,20 @@ public final class ModBlockLootTableProvider extends LootTableProvider {
     @Override
     protected void generate() {
       dropSelf(ModBlocks.HAND_CRANK_PRESS.get());
+      dropSelf(ModBlocks.SUNFLOWER_COLLECTOR.get());
+      dropSelf(ModBlocks.RADIANT_OVEN.get());
+      dropSelf(ModBlocks.VINE_CONDUIT.get());
+      dropSelf(ModBlocks.MOSS_CAPACITOR.get());
     }
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-      return List.of(ModBlocks.HAND_CRANK_PRESS.get());
+      return List.of(
+          ModBlocks.HAND_CRANK_PRESS.get(),
+          ModBlocks.SUNFLOWER_COLLECTOR.get(),
+          ModBlocks.RADIANT_OVEN.get(),
+          ModBlocks.VINE_CONDUIT.get(),
+          ModBlocks.MOSS_CAPACITOR.get());
     }
   }
 }
